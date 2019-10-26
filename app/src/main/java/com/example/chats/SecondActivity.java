@@ -275,7 +275,7 @@ public class SecondActivity extends AppCompatActivity {
                         if (task.isSuccessful()) {
 
                             final String download_url = task.getResult().getDownloadUrl().toString();
-//                            filepath.getDownloadUrl();
+
                             UploadTask uploadTask = thumb_filepath.putBytes(thumb_byte);
                             uploadTask.addOnCompleteListener(new OnCompleteListener<UploadTask.TaskSnapshot>() {
                                 @Override
